@@ -14,6 +14,7 @@ import numpy as np
 import PIL.Image as pil
 import matplotlib as mpl
 import matplotlib.cm as cm
+import time
 
 import torch
 from torchvision import transforms, datasets
@@ -151,5 +152,7 @@ def test_simple(args):
 
 
 if __name__ == '__main__':
+    start = time.time()
     args = parse_args()
     test_simple(args)
+    print("time taken: ", time.time() - start)
