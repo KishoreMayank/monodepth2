@@ -35,4 +35,4 @@ if __name__ == '__main__':
     count = depth_check(args)
     total_time = time.time() - start
     print("Total time taken: ", total_time)
-    print(f"Processed every {args.fps} frame to get an average time of {total_time/count}")
+    # print(f"Processed every {args.fps} frame to get an average time of {total_time/count}")
